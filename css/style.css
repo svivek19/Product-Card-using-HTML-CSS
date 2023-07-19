@@ -1,0 +1,162 @@
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+.card {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+img{
+    width: 20%;
+    border-radius: 10px 0 0 10px;
+}
+.text-content{
+    width: 20%;
+    background-color: #fff;
+    border-radius: 0 10px 10px 0;
+}
+span{
+    margin:30px;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: hsl(228, 12%, 48%);
+}
+.title{
+    margin:30px;
+    font-size: 30px;
+    color:hsl(212, 21%, 14%);
+    font-weight: 700;
+}
+.content{
+    margin:30px;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+}
+.price{
+    margin: 30px;
+    font-size: 30px;
+    font-weight: 700;
+    color: hsl(158, 36%, 37%);
+}
+.price > del{
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    font-weight: 100;
+    margin-left: 8px;
+}
+button{
+    margin: 30px;
+    width: 80%;
+    padding: 16px 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(158, 36%, 37%);
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    
+}
+button:hover{
+    background-color: #1A4031;
+    transition: all 0.2s;
+}
+
+button > svg {
+    margin-right: 10px;
+    margin-left: 20px;
+    display: flex;
+
+}
+/* Media Queries */
+
+@media screen and (max-width: 425px){
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+    
+    body {
+        background-color: hsl(30, 38%, 92%);
+        font-family: 'Montserrat', sans-serif;
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10% auto;
+    }
+    img{
+        background-image: url(/product-card/images/image-product-mobile.jpg);
+        width: 85%;
+        border-radius: 10px 10px 0 0;
+    }
+    .text-content{
+        width: 85%;
+        background-color: #fff;
+        border-radius: 0 0 10px 10px;
+    }
+    span{
+        margin-top: 30px;
+        text-transform: uppercase;
+        font-size: 20px;
+        color: hsl(228, 12%, 48%);
+    }
+    .title{
+        margin:20px;
+        font-size: 30px;
+        color:hsl(212, 21%, 14%);
+        font-weight: 700;
+    }
+    .content{
+        margin:20px;
+        font-size: 14px;
+        color: hsl(228, 12%, 48%);
+        font-weight: 500;
+    }
+    .price{
+        margin: 20px;
+        font-size: 27px;
+        font-weight: 700;
+        color: hsl(158, 36%, 37%);
+    }
+    .price > del{
+        font-size: 12px;
+        color: hsl(228, 12%, 48%);
+        font-weight: 100;
+        margin-left: 8px;
+    }
+    button{
+        margin: 20px;
+        margin-right: 30px;
+        width: 80%;
+        padding: 18px 25px;
+        border: none;
+        border-radius: 5px;
+        background-color: hsl(158, 36%, 37%);
+        color: #fff;
+        font-weight: 700;
+        font-size: 15px;
+        cursor: pointer;
+        display: flex;
+        
+    }
+    button:hover{
+        background-color: #1A4031;;
+    }
+    
+    button > svg {
+        margin-right: 10px;
+        margin-left: 40px;
+        display: flex;
+    
+    }
+
+}
